@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -12,6 +13,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
+    img: string | StaticImport;
     quote: string;
     name: string;
     title: string;
